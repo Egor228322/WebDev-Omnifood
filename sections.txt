@@ -1,0 +1,12 @@
+Sections:
+
+- Logo + Navigation
+- Hero 
+- Featured in
+- How it works
+- Diets and Meals
+- Testimonials + Gallery
+- Pricing + features
+- call to action
+- Footer
+
