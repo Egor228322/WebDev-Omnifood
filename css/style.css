@@ -345,3 +345,12 @@
 .center-text {
    text-align: center;
 }
+
+/* ------- Testimonial Section ------*/
+
+.section-testimonials {
+   padding: 9.6rem;
+   display: grid;
+   grid-column: 1fr 1fr;
+}
+
