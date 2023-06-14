@@ -31,7 +31,7 @@
 
  /* ----------- Header Element -------------- */
 
- header {
+ .header-nav {
    display: flex;
    justify-content: space-between;
    background-color: #fdf2e9;
@@ -197,8 +197,6 @@
   transform: translate(-50%, -50%);
 }
 
-
-
  .step-img-box::before {
   width: 60%;
   padding-bottom: 60%;
@@ -349,8 +347,142 @@
 /* ------- Testimonial Section ------*/
 
 .section-testimonials {
-   padding: 9.6rem;
+   padding: 9.6rem 0;
    display: grid;
-   grid-column: 1fr 1fr;
+   grid-template-columns: 55fr 45fr;
+   background-color: #fdf2e9;
 }
 
+.testimonials {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   gap: 4.8rem 8rem;
+}
+
+.testimonials-container {
+   padding: 9.6rem;
+}
+
+.testimonial-img {
+   width: 64px;
+   border-radius: 50%;
+   margin-bottom: 1.2rem;
+}
+
+blockquote {
+   font-size: 1.8rem;
+   line-height: 1.8;
+   margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+   font-size: 1.6rem;
+   color: #6f6f6f;
+}
+
+.gallery {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows: repeat(4, 1fr);
+   gap: 1.6rem;
+   padding: 1.6rem;
+}
+
+.gallery-item img {
+   width: 100%;
+   display: block;
+   transition: all 0.3s;
+}
+
+.gallery-item img:hover {
+   transform: scale(1.1);
+}
+
+figure {
+   overflow: hidden;
+}
+
+/* ------------------------------------*/
+
+/* --------  Section Pricing --------- */
+
+.section-pricing {
+   padding: 9.6rem 0;
+}
+
+.pricing-plan {
+   border-radius: 10px;
+   padding: 4.8rem;
+   width: 75%;
+   border: 2px solid #fdf2e9;
+}
+
+.pricing-plan.preferred {
+   background-color: #fdf2e9;
+   position: relative;
+   overflow: hidden;
+}
+
+.pricing-plan.preferred::after {
+   content: "best value";
+   text-transform: uppercase;
+   font-size: 1.4rem;
+   color: #333;
+   font-weight: 700;
+   background-color: #ffd43b;
+   padding: 0.8rem 8rem;
+   position: absolute;
+   right:-18%;
+   top: 6%;
+   transform: rotate(45deg);
+}
+
+.pricing-plan--starter {
+   justify-self: end;
+}
+
+.plan-header {
+   text-align: center;
+   margin-bottom: 4.8rem;
+}
+
+.plan-name {
+   color: #cf711f;
+   font-weight: 600;
+   font-size: 1.6rem;
+   text-transform: uppercase;
+   letter-spacing: 0.75;
+   margin-bottom: 3.2rem;
+}
+
+.plan-price {
+   font-size: 6.2rem;
+   font-weight: 600;
+   color: #333;
+   margin-bottom: 3.2rem;
+}
+
+.plan-text {
+   font-size: 1.8rem;
+   line-height: 1.6;
+   color: #6f6f6f;
+}
+
+.plan-price span {
+   font-size: 3rem;
+   font-weight: 500;
+   margin-right: 0.8rem;
+}
+
+.plan-sign-up {
+   margin-top: 4.8rem;
+   text-align: center;
+}
+
+.list-icon.last {
+   color: white;
+}
+
+
+/* ------------------------------------*/
