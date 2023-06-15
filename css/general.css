@@ -87,7 +87,14 @@ SPACING SYSTEM (px)
         display: grid;
         gap: 9.6rem 6.4rem;
         grid-template-columns: repeat(2, 1fr);
+
+        margin-bottom: 9.6rem;
      }
+
+     .grid:not(:last-child) {
+         margin-bottom: 9.6rem;
+     }
+
 
      .grid--center-v {
         align-items: center;
