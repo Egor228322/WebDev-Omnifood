@@ -118,11 +118,6 @@ SPACING SYSTEM (px)
         grid-template-columns: repeat(5, 1fr);
      }
   
-     /* .section-how div div{
-        padding: 100px;
-        font-size: 1rem;
-     } */
-  
      .container {
         max-width: 120rem;
         margin: 0 auto;

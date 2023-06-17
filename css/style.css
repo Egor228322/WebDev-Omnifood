@@ -589,10 +589,6 @@ select {
    color: #aaa;
 }
 
-.cta-form select {
-
-}
-
 .cta-form button {
    border: none;
    cursor: pointer;
@@ -612,6 +608,61 @@ select {
    box-shadow: 0 0 0 0.8rem #fdf2e977;
  }
 
+/* ------------ Main ---------- */
+main {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* -------- Footer ------------ */
+
+footer {
+   padding: 9.6rem 0;
+}
 
 
+footer ul {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 1.8rem;
+   font-size: 1.4rem;
+}
 
+footer a:link, footer a:visited {
+   text-decoration: none;
+   color: #777;
+}
+
+.footer-heading {
+   color: #333;
+   font-size: 1.8rem;
+   font-weight: 500;
+   margin-bottom: 3.2rem;
+}
+
+.social-links {
+   flex-direction: row;
+   margin-top: 1.8rem;
+   display: flex;
+   gap: 1.6rem;
+   align-items: center;
+}
+
+.link-icon {
+   height: 2.4rem;
+   width: 2.5rem;
+}
+
+.copyright {
+   margin-top: 1.8rem;
+}
+
+.address-col address * {
+   font-size: 1.4rem;
+}
+
+.address-col p:nth-child(2) {
+   margin-top: 3.2rem;
+}
+
+/* ----------------------------- */
