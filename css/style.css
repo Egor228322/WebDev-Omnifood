@@ -37,6 +37,7 @@
    background-color: #fdf2e9;
    align-items: center;
    padding-inline: 2.6rem;
+   position: relative;
 
    height: 9.6rem;
 
@@ -86,7 +87,7 @@
 
    .btn-mobile-nav {
       border: none;
-      background-color: white;
+      background-color: #fdf2e9;
       cursor: pointer;
 
       display: none;
