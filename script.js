@@ -2,30 +2,45 @@ const btnMenu = document.querySelector('.btn-mobile-nav');
 const btnFullHero = document.querySelector('.btn--full');
 const btnEmptyHero = document.querySelector('.btn--outline');
 const mainNav = document.querySelector('.main-nav');
+const secHero = document.querySelector('.section-hero')
 const cta = document.querySelector('.section-cta');
 const steps = document.querySelector('.section-how');
 const nav = document.querySelector('.header-nav');
+//Setting the current year for copyright
 
+const copyYear = document.querySelector('.year');
+const year = new Date().getFullYear();
+copyYear.textContent = year;
 
-btnFullHero.addEventListener('click', function(e) {
-    console.log(e.target);
-    cta.scrollIntoView({behavior: "smooth"});
+//Add functionality to the mobile navigation
+
+btnMenu.addEventListener('click', function(e) {
+    e.preventDefault();
+    nav.classList.toggle('nav-open');
 })
 
-btnEmptyHero.addEventListener('click', function(e) {
-    console.log(e.target);
-    steps.scrollIntoView({behavior: "smooth"});
-})
+//Smooth Scrolling Animation
 
-const stickyNav = function(entries) {
+
+
+//Implementing sticky navigation
+
+const addSticky = function(entries) {
     const [entry] = entries;
-    console.log(entry); 
+    console.log(entry);
+    
+    if (entry.isIntersecting) {
+        nav.classList.remove('sticky');
+    }
+    else if (!entry.isIntersecting) {
+        nav.classList.add('sticky');
+    }
+
 }
 
-
-const observer = new IntersectionObserver(stickyNav, {
+const observer = new IntersectionObserver(addSticky, {
     root: null,
-    threshold: 0.3
+    threshold: 0.3,
 })
 
-observer.observe(steps);
+observer.observe(secHero);
